@@ -11,19 +11,20 @@
     <title>@yield('title', 'Joshua White')</title>
   </head>
   <body>
-      <div class="header">
-          <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-          </ul>
+      <div class="container-fluid header">
+          <div class="row">
+                <div class="col-sm"><a href="/">Home</a></div>
+                <div class="col-sm"><a href="/about">About</a></div>
+                <div class="col-sm"><a href="/contact">Contact</a></div>
+            </ul>
+          </div>
       </div>
              
-      <div class="content">
+      <div class="container main">
           @yield('content')
       </div>
       
-      <div class="footer">
+      <div class="container-fluid footer">
           <p>&copy; Joshua White {{ date("Y") }}</p>
       </div>
       
